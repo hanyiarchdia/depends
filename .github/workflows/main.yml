@@ -36,6 +36,7 @@ jobs:
           project_path: /github/workspace/
           result_path: dv8-output
           project_name: depends
+      - run: cat ~/.dv8/logs/dv8-console.log
 
       # Store the DV8 results as an artifact in the workflow
       - name: Store DV8 analysis
