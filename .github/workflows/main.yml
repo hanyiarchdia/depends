@@ -32,6 +32,7 @@ jobs:
           license_key: ${{ secrets.LICENSE_KEY }}
           activation_code: ${{ secrets.ACTIVATION_CODE }}
           source_language: java
+          project_path: /github/workspace/
 
       # Store the DV8 results as an artifact in the workflow
       - name: Store DV8 analysis
