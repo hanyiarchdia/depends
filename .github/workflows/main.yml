@@ -29,9 +29,9 @@ jobs:
         id: dv8
         uses: archtimize/dv8-action@master
         with: 
-          license key: ${{ secrets.LICENSE_KEY }}
-          activation code: ${{ secrets.ACTIVATION_CODE }}
-          source language: java
+          license_key: ${{ secrets.LICENSE_KEY }}
+          activation_code: ${{ secrets.ACTIVATION_CODE }}
+          source_language: java
 
       # Store the DV8 results as an artifact in the workflow
       - name: Store DV8 analysis
