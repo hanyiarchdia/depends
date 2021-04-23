@@ -37,5 +37,5 @@ jobs:
       - name: Store DV8 analysis
         uses: actions/upload-artifact@v2
         with:
-          name: project
-          path: project/
+          name: dv8-output
+          path: /dv8-output
