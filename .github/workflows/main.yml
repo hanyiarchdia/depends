@@ -33,10 +33,11 @@ jobs:
           activation_code: ${{ secrets.ACTIVATION_CODE }}
           source_language: java
           project_path: /github/workspace/
+          result_path: dv8-output
 
       # Store the DV8 results as an artifact in the workflow
       - name: Store DV8 analysis
         uses: actions/upload-artifact@v2
         with:
           name: dv8-output
-          path: /dv8-output
+          path: dv8-output
